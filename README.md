@@ -33,10 +33,7 @@ Each article includes:
 - DistilBERT outperformed the TF-IDF baseline.
 - The confusion matrix showed very few classification errors.
 
-## Files
-- `Fake_News_Detection_Project.ipynb` : main notebook
-- `Fake_News_Report_UPDATED.pdf` : final report
-- `images/` : screenshots and visual outputs
+
 
 ## Tools and Libraries
 - Python
