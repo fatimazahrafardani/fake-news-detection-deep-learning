@@ -47,7 +47,14 @@ Each article includes:
 - Transformers
 - Datasets
 - PyTorch
-- Google Colab
+## 🚀 Run on Google Colab
+
+You can run this project directly on Google Colab:
+
+👉 [Open in Colab](https://colab.research.google.com/drive/XXXX)
+
+Google Colab
+https://colab.research.google.com/drive/1yXV3_puvbFHP2_bYvrUvLVub28351-mY?usp=sharing
 
 ## Author
 FARDANI FATIMA ZAHRAE
