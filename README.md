@@ -51,10 +51,9 @@ Each article includes:
 
 You can run this project directly on Google Colab:
 
-👉 [Open in Colab]("https://colab.research.google.com/drive/1yXV3_puvbFHP2_bYvrUvLVub28351-mY?usp=sharing")
+👉 [Open in Colab](https://colab.research.google.com/drive/1yXV3_puvbFHP2_bYvrUvLVub28351-mY?usp=sharing)
 
-Google Colab
-https://colab.research.google.com/drive/1yXV3_puvbFHP2_bYvrUvLVub28351-mY?usp=sharing
+
 
 ## Author
 FARDANI FATIMA ZAHRAE
