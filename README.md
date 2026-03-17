@@ -50,4 +50,4 @@ Each article includes:
 - Google Colab
 
 ## Author
-Your Name
+FARDANI FATIMA ZAHRAE
