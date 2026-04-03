@@ -1,56 +1,105 @@
-# Fake News Detection using TF-IDF and DistilBERT
+# 🧠 Fake News Detection باستخدام Machine Learning و Deep Learning
 
-This project focuses on detecting fake news articles using two approaches:
-1. A traditional Machine Learning baseline using TF-IDF + Logistic Regression
-2. A Deep Learning approach using DistilBERT
+## 📖 Description
+هذا المشروع يهدف إلى تصنيف الأخبار إلى **Fake (مزيفة)** أو **Real (حقيقية)** باستخدام تقنيات الذكاء الاصطناعي.
 
-## Dataset
-The dataset contains two CSV files:
+تم تطبيق نموذجين:
+- نموذج تقليدي: TF-IDF + Logistic Regression
+- نموذج متقدم: DistilBERT (Transformer)
+
+المشروع يشمل جميع المراحل من معالجة البيانات إلى التقييم النهائي.
+
+---
+
+## 🎯 Objectives
+- تحميل البيانات وتحليلها
+- تنظيف البيانات (Preprocessing)
+- القيام بـ Exploratory Data Analysis (EDA)
+- بناء نموذج Machine Learning (TF-IDF)
+- تدريب نموذج Deep Learning (DistilBERT)
+- مقارنة الأداء بين النماذج
+
+---
+
+## 📊 Dataset
+تم استخدام:
 - Fake.csv
 - True.csv
 
-Each article includes:
+البيانات تحتوي على:
 - title
 - text
 - subject
 - date
 
-## Project Workflow
-1. Data loading
-2. Data preprocessing
-3. Exploratory Data Analysis (EDA)
-4. TF-IDF baseline model
-5. DistilBERT fine-tuning
-6. Final evaluation
-7. Model comparison
+تم دمج البيانات وإنشاء عمود جديد:
+👉 content = title + text :contentReference[oaicite:0]{index=0}  
 
-## Results
-- TF-IDF Accuracy: 98.92%
-- DistilBERT Accuracy: 99.97%
+---
 
-## Key Findings
-- The dataset is relatively balanced between fake and real news.
-- DistilBERT outperformed the TF-IDF baseline.
-- The confusion matrix showed very few classification errors.
-
-
-
-## Tools and Libraries
+## ⚙️ Technologies Used
 - Python
-- Pandas
-- NumPy
-- Matplotlib
+- Pandas / NumPy
 - Scikit-learn
-- Transformers
-- Datasets
+- Matplotlib
+- Hugging Face Transformers
 - PyTorch
-## 🚀 Run on Google Colab
+- Google Colab (GPU)
 
-You can run this project directly on Google Colab:
+---
 
-👉 [Open in Colab](https://colab.research.google.com/drive/1yXV3_puvbFHP2_bYvrUvLVub28351-mY?usp=sharing)
+## 🔄 Project Workflow
 
+### 1. Data Loading
+- تحميل البيانات من CSV
+- التحقق من الأعمدة
 
+### 2. Preprocessing
+- إعطاء labels:
+  - Fake = 1
+  - Real = 0
+- دمج البيانات وتنظيفها
+- Train/Test Split مع stratification :contentReference[oaicite:1]{index=1}  
 
-## Author
-FARDANI FATIMA ZAHRAE
+### 3. EDA
+- توزيع البيانات (Fake vs Real)
+- تحليل طول النصوص
+- الكلمات الأكثر تكراراً :contentReference[oaicite:2]{index=2}  
+
+### 4. Baseline Model
+- TF-IDF Vectorization
+- Logistic Regression
+
+### 5. Deep Learning Model
+- Tokenization باستخدام DistilBERT
+- تدريب النموذج باستخدام Trainer API
+
+### 6. Evaluation
+- Accuracy
+- Precision / Recall / F1-score
+- Confusion Matrix
+
+---
+
+## 📈 Results
+
+| Model | Accuracy |
+|------|--------|
+| TF-IDF + Logistic Regression | ~0.989 |
+| DistilBERT | ~0.999 |
+
+👉 DistilBERT أعطى أفضل النتائج :contentReference[oaicite:3]{index=3}  
+
+---
+
+## 📊 Model Comparison
+- النموذج التقليدي جيد جداً
+- لكن DistilBERT تفوق عليه بفضل فهم السياق (context)
+
+---
+
+## 🚀 How to Run
+
+1. تثبيت المكتبات:
+```bash
+pip install pandas numpy scikit-learn matplotlib transformers torch
